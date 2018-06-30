@@ -2,9 +2,9 @@
 ## functions do
 ## The main objective of this exercise is to create functions makeCacheMatrix and cacheSolve
 
-## Write a short comment describing this function
 
 
+## This function retrieves the inverse of a matrix from the cache
 makeCacheMatrix <- function(x = matrix()) {
   Inv <- NULL
   set <- function(y) {
@@ -19,6 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getInv = getInv)
 }
 
+
+## This function checks if the inverse already exists, otherwise, it solves for its inverse 
 
 cacheSolve <- function(x, ...) {
   m <- x$getInv()
